@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>개인정보처리방침 | CrossPost Studio</title>
+<meta name="description" content="CrossPost Studio의 Google 권한, 영상 전송, 기기 내 저장, 구독 정보 처리 및 개인정보 삭제 방법을 안내합니다.">
+<link rel="canonical" href="https://jamminssssss.github.io/crosspost-studio/privacy.html">
+<meta property="og:title" content="개인정보처리방침 | CrossPost Studio">
+<meta property="og:description" content="CrossPost Studio의 Google 권한, 영상 전송, 기기 내 저장, 구독 정보 처리 및 개인정보 삭제 방법을 안내합니다.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://jamminssssss.github.io/crosspost-studio/assets/app-icon.png">
+<link rel="icon" type="image/png" href="assets/app-icon.png">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">본문으로 이동</a>
+<header class="header wrap"><a class="brand" href="./"><img src="assets/app-icon.png" width="38" height="38" alt=""><span>CrossPost Studio</span></a><nav aria-label="주 메뉴"><a href="./#features">기능</a><a href="./#plans">요금제</a><a href="support.html">문의</a></nav></header>
+<main id="main" class="legal wrap">
+<div class="legal-heading"><a class="back-link" href="./">← 앱 소개</a><span class="eyebrow">PRIVACY POLICY</span><h1>개인정보처리방침</h1><p>CrossPost Studio가 어떤 정보를 사용하고, 어디에 저장하며, 어떻게 삭제할 수 있는지 설명합니다.</p><p class="legal-meta">운영자: Jae-min Park · 시행일 및 최종 수정일: 2026년 10월 16일</p></div>
+<div class="policy-summary"><strong>먼저 알아두세요.</strong><p>현재 앱은 별도 회원가입, 개발자 운영 영상 서버, 광고 SDK, 행동 분석 SDK를 사용하지 않습니다. Google 인증·유튜브 업로드와 Apple 결제에는 각 서비스의 데이터 처리가 포함됩니다.</p></div>
+<nav class="contents" aria-label="개인정보처리방침 목차"><a href="#data">처리하는 정보</a><a href="#google">Google 권한과 이용</a><a href="#retention">보관 및 삭제</a><a href="#providers">외부 서비스</a><a href="#contact">권리와 문의</a></nav>
+<section id="data"><h2>1. 처리하는 정보와 목적</h2><h3>선택한 영상과 작성한 문구</h3><p>사용자가 사진 선택기에서 고른 영상, 제목, 설명, 해시태그, 아동용 여부를 사용합니다. 목적은 영상 미리보기·기본 정보 점검·초안 작성·사용자가 요청한 유튜브 비공개 업로드입니다. 사진 보관함 전체를 개발자에게 전송하지 않습니다.</p><h3>기기 내부 작업 자료</h3><p>현재 초안, 이름을 붙인 텍스트 초안, 템플릿, 해시태그 세트, 업로드 시각·결과·유튜브 영상 식별자 등의 기록을 기기 내부 SwiftData 저장소에 보관합니다. 업로드 준비를 위해 선택한 영상의 기기 내 사본을 사용합니다. 텍스트 초안 보관함에는 영상 파일을 포함하지 않습니다.</p><h3>Google 인증 정보</h3><p>Google이 발급하는 액세스 토큰·갱신 토큰·만료 정보를 사용하여 유튜브 요청을 인증합니다. 토큰은 기기 전용 접근 설정을 사용한 iOS Keychain에 저장합니다. Google 비밀번호는 앱이 요청하거나 저장하지 않습니다. 별도 CrossPost Studio 서버로 토큰을 전달하지 않습니다.</p><h3>구독 및 문의</h3><p>Pro 구독 상태를 확인하기 위해 Apple StoreKit의 구매·구독 자격 정보를 기기에서 확인합니다. 결제 카드 정보는 앱이나 개발자가 수집하지 않습니다. 이메일로 문의하면 이메일 주소, 문의 내용 및 사용자가 첨부한 자료를 지원·답변·삭제 요청 처리에 사용합니다.</p></section>
+<section id="google"><h2>2. Google 계정 연결과 데이터 이용</h2><p>앱은 <code>https://www.googleapis.com/auth/youtube.upload</code> 권한을 요청합니다. 사용자가 Google 인증 화면에서 허용한 후, 사용자가 업로드를 시작하면 선택한 영상과 입력한 제목·설명·해시태그·아동용 여부를 YouTube Data API를 통해 Google에 직접 전송합니다. 이 과정에서 Google은 네트워크 연결 및 요청 정보를 처리할 수 있습니다.</p><p>앱은 비공개 상태로 업로드하며, 공개 전환은 사용자가 YouTube Studio에서 직접 결정합니다. Google 사용자 데이터는 이 사용자 요청 기능을 제공하는 목적으로만 사용합니다. 판매, 광고 타기팅, 신용 평가 또는 범용 AI 모델 학습에 사용하지 않습니다. 개발자가 일반적인 앱 사용 과정에서 영상이나 토큰을 열람하는 별도 관리 시스템은 없습니다.</p><h3>Google API Limited Use</h3><p lang="en">CrossPost Studio’s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p><p>CrossPost Studio는 <a href="https://www.youtube.com/t/terms">YouTube API Services</a>를 이용하며, Google 및 유튜브가 처리하는 정보에는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>이 적용됩니다.</p></section>
+<section id="retention"><h2>3. 보관 기간과 삭제 방법</h2><p>초안·템플릿·해시태그 세트·업로드 기록은 사용자가 기기에 보관하는 동안 유지됩니다. 보관함에서 항목을 삭제하거나 기록 화면에서 업로드 기록을 삭제할 수 있습니다. 현재 작성 중인 문구는 입력 필드에서 직접 지울 수 있습니다. 영상 사본은 영상 교체 또는 작업 종료 때 다른 진행 중인 작업에서 사용하지 않는 경우 정리됩니다.</p><ol><li><strong>Google 연결 해제:</strong> 앱의 Accounts에서 YouTube 항목의 Disconnect를 선택하면 기기 토큰을 삭제하고 Google에 권한 취소를 요청합니다. 네트워크 상태와 관계없이 권한을 직접 확인·취소하려면 <a href="https://myaccount.google.com/permissions">Google 계정의 서드 파티 연결 관리</a>를 이용하세요.</li><li><strong>앱의 로컬 자료 삭제:</strong> 보관함과 기록에서 항목을 삭제하세요. 앱 삭제는 일반적인 앱 저장 자료를 제거하지만, iOS 백업·복원 설정에 따라 사본이 남을 수 있습니다. Keychain 정보는 앱 삭제만으로 항상 제거된다고 보장할 수 없으므로 앱 삭제 전에 연결 해제를 권합니다.</li><li><strong>이미 업로드된 영상 삭제:</strong> 앱 연결 해제나 앱 삭제는 유튜브 영상을 삭제하지 않습니다. YouTube Studio에서 직접 삭제하세요.</li><li><strong>이메일 지원 자료:</strong> 문의 처리를 위해 필요한 동안 보관하며, 불필요해지거나 삭제 요청을 받으면 관련 의무에 따라 삭제합니다. 개발자가 보유한 문의 자료 삭제는 아래 연락처로 요청할 수 있습니다.</li></ol><p>기기 내부 자료를 개발자가 원격으로 조회하거나 삭제하는 기능은 없습니다. <a href="support.html#delete">지원 페이지에서 삭제 절차</a>를 확인할 수 있습니다.</p></section>
+<section id="providers"><h2>4. 외부 서비스와 정보 전달</h2><p><strong>Google / YouTube:</strong> 인증과 사용자가 요청한 영상 업로드를 처리합니다. 영상과 입력 문구는 사용자 기기에서 Google로 전송됩니다. <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 참고하세요.</p><p><strong>Apple:</strong> App Store 결제, 구독 관리 및 StoreKit 자격 확인을 제공합니다. 관련 정보는 <a href="https://www.apple.com/legal/privacy/">Apple 개인정보처리방침</a> 및 결제 조건에 따라 처리됩니다.</p><p><strong>GitHub Pages:</strong> 이 소개·정책 사이트를 호스팅합니다. 앱의 영상·토큰을 GitHub Pages에 전송하지 않습니다. 다만 웹사이트를 방문하면 GitHub가 보안을 위해 IP 주소 등 접속 정보를 처리할 수 있습니다. 이 사이트에는 자체 분석 스크립트, 광고 또는 자체 쿠키를 추가하지 않았습니다. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>을 참고하세요.</p><p>이 외부 서비스는 운영 지역과 정책에 따라 정보를 국외에서 처리할 수 있습니다. 각 제공자의 처리 지역, 보관 및 권리 행사 방법은 위 정책에서 확인할 수 있습니다. 개발자가 운영하는 별도 해외 영상 저장소나 사용자 데이터베이스는 사용하지 않습니다.</p></section>
+<section><h2>5. 정보 보호</h2><p>앱은 HTTPS를 사용해 Google과 통신하고, 인증 토큰을 기기 전용 Keychain에 보관합니다. 인증은 OAuth 및 PKCE를 사용합니다. 현재 앱은 광고·사용자 행동 추적·자체 분석 SDK를 포함하지 않으며, 자체 클라우드 보관함 동기화를 제공하지 않습니다. 기기의 잠금·백업·공유 설정도 데이터 보호에 영향을 줄 수 있습니다.</p></section>
+<section id="contact"><h2>6. 권리 행사 및 개인정보 문의</h2><p>사용자는 계정 연결을 해제하고, 저장한 항목을 삭제하며, 개발자가 이메일 지원 과정에서 보유하게 된 정보의 확인·정정·삭제를 요청할 수 있습니다. 요청 처리에 필요한 최소한의 확인을 거친 후 대응합니다. Google·Apple·GitHub가 독립적으로 보유한 정보에 대한 권리는 각 제공자에게 행사할 수 있습니다.</p><p><strong>개인정보 관련 연락 담당자:</strong> Jae-min Park<br><strong>이메일:</strong> <a href="mailto:jmpark3758@gmail.com">jmpark3758@gmail.com</a></p><p>요청 시 어떤 정보 또는 문의의 삭제를 원하는지 설명해 주세요. Google 비밀번호, 인증 토큰, 결제 카드 정보를 보내지 마세요.</p></section>
+<section><h2>7. 방침 변경</h2><p>기능이나 정보 처리 방식이 바뀌면 이 페이지와 수정일을 갱신합니다. 중요한 변경은 필요한 경우 앱 또는 이 웹사이트를 통해 알립니다.</p></section>
+</main>
+<footer class="footer wrap"><div class="footer-top"><a class="brand" href="./"><img src="assets/app-icon.png" width="32" height="32" alt=""><span>CrossPost Studio</span></a><p>만들고, 검토하고, 준비되면 공개하세요.</p></div><nav aria-label="하단 메뉴"><a href="privacy.html">개인정보처리방침</a><a href="terms.html">이용약관</a><a href="support.html">지원 및 데이터 삭제</a><a href="../">개발자 홈페이지 ↗</a></nav><div class="fineprint"><span>© 2026 Jae-min Park</span><span>Independent iOS app. YouTube 및 Google과 제휴한 서비스가 아닙니다.</span></div></footer>
+</body>
+</html>
